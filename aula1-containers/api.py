@@ -47,3 +47,8 @@ def prediz(entrada: Entrada):
         sentimento=modelo.classes_[indice],
         confianca=round(float(probabilidades[indice]), 4),
     )
+
+@app.get("/sobre")
+def sobre():
+    """Modificar api.py no GitHub Codespaces: novo endpoint /sobre identificando a dupla."""
+    return {"nomes": "Eduardo Muller Berlitz, Gustavo Rech Saul"}
