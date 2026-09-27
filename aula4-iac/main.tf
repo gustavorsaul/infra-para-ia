@@ -8,6 +8,7 @@ locals {
 }
 
 # A "pasta" que agrupa tudo, igual à que vocês criaram pelo portal na aula 1.
+# Resource group principal da infraestrutura da Aula 4
 resource "azurerm_resource_group" "rg" {
   name     = "aula4-rg"
   location = var.location
